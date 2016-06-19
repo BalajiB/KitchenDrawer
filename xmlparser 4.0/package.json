@@ -1,0 +1,14 @@
+
+    {
+      "name": "xmlparser",
+      "dependencies": {
+        "fs" : "*",
+        "util" : "*",
+        "xml2js" : "*",
+        "json-query": "*",
+        "libxml-xsd" : "*",
+        "mongoose" : "*",
+        "xpath" : "*",
+        "xmldom" : "*"
+      }
+    }

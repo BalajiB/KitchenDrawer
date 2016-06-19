@@ -1,0 +1,53 @@
+<div class="container-fluid" ng-controller="ProductController as ctrl">
+  <div class="text-left">
+    <h4>Products purchased</h4>
+  </div>
+ <table class="table table-hover">
+    <tbody>
+      <tr ng-repeat="row in ctrl.products">
+<td>
+<div class="row"><div class="col-sm-2">Product :</div> <div class="col-sm-10"><strong>{{row.Sale.POSIdentity.POSItemID}}</strong></div></div>
+<div class="row"><div class="col-sm-2">Price :</div> <div class="col-sm-10"><strong>${{row.Sale.ExtendedAmount}}</strong></div></div>
+<div class="row"><div class="col-sm-2">SequenceNumber :</div><div class="col-sm-10"><strong>{{row.SequenceNumber}}</strong></div></div>
+          <div class="row"><div class="col-sm-12"><p><a target="_blank" href="http://www.bootsnipp.com">More informaiton..</a></p></div></div>
+<div class="row"><div class="col-sm-10">
+          <md-autocomplete
+          md-input-id = "{{'Auto'+row.SequenceNumber}}"
+          md-no-cache = true
+        md-selected-item="item.selectedItem"
+        md-search-text="row.searchText"
+        md-items="item in ctrl.querySearch(row.searchText)"
+        md-item-text="item.text"
+        md-selected-item-change="ctrl.addProductToCategory(item, row)"
+        md-min-length="0"
+        placeholder="Choose a category for this product"
+        >
+    <md-item-template>
+        <span md-highlight-text="ctrl['searchText' + $index]" md-highlight-flags="^i">{{item.text}}</span>
+    </md-item-template>
+    <md-not-found>
+                    No categories matching "{{row.searchText}}" were found .
+                    <a ng-click="ctrl.addNewCategory(row, row.searchText, 'Auto'+row.SequenceNumber)">Create a new one!</a>
+                 </md-not-found>
+</md-autocomplete>
+</div>
+<div class="hide" id="{{'Auto'+row.SequenceNumber+'Icon'}}">
+<i class="fa fa-check-circle" style="color:green" aria-hidden="true"></i>
+</div>
+</div>
+    <!--
+<div ng-if="$last">
+    {{onEReady()}}
+    </div> -->
+</td>
+</tr>
+    </tbody>
+    </table>
+    </div>
+<!-- <script type="text/javascript">
+  $(document).ready(function(){
+    // $.each(
+  // });
+});
+</script>
+ -->

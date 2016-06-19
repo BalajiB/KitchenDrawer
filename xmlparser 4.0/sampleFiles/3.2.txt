@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- UseCase: Item Purchase from shelf -->
+<POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.nrf-arts.org/IXRetail/namespace/ POSLogRetailTransactionStockView.xsd">
+<Transaction>
+<RetailTransaction Version="1.0">
+<RetailStoreID>HighStreet</RetailStoreID>
+<WorkstationID>POS5</WorkstationID>
+<SequenceNumber>4294967295</SequenceNumber>
+<BusinessDayDate>2001-08-13</BusinessDayDate>
+<BeginDateTime>2001-08-13T09:03:00</BeginDateTime>
+<LineItem>
+<SequenceNumber>1</SequenceNumber>
+<POSIdentity>
+<POSItemID>01234567890123</POSItemID>
+</POSIdentity>
+<ActualSalesUnitPrice>1.63</ActualSalesUnitPrice>
+<ExtendedAmount>4.89</ExtendedAmount>
+<Quantity>3</Quantity>
+</Sale>
+</LineItem>
+<LineItem>
+<SequenceNumber>2</SequenceNumber>
+<Tender TenderID=”Cash” TypeCode=”Sale”>
+<Amount>5.00</Amount>
+</Tender>
+</LineItem>
+<LineItem>
+<SequenceNumber>3</SequenceNumber>
+<Tender TenderID=”Cash” TypeCode=”Sale” ChangeFlag=”true”>
+<Amount>.11</Amount>
+</Tender>
+</LineItem>
+<Total TotalType="TransactionGrandAmount">
+<Amount>4.89</Amount>
+</Total>
+</RetailTransaction>
+</Transaction>
+</POSLog>

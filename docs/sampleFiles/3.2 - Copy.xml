@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- UseCase: Item Purchase from shelf -->
+<POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.nrf-arts.org/IXRetail/namespace/ POSLogRetailTransactionStockView.xsd">
+<Transaction>
+<RetailTransaction Version="1.0">
+<RetailStoreID>HighStreet</RetailStoreID>
+<WorkstationID>POS5</WorkstationID>
+<SequenceNumber>4294967295</SequenceNumber>
+<BusinessDayDate>2001-08-13</BusinessDayDate>
+<BeginDateTime>2001-08-13T09:03:00</BeginDateTime>
+<LineItem>
+<SequenceNumber>1</SequenceNumber>
+<Sale ItemType="Stock">
+<POSIdentity>
+<POSItemID>01234567890123</POSItemID>
+</POSIdentity>
+<ActualSalesUnitPrice>1.63</ActualSalesUnitPrice>
+<ExtendedAmount>4.89</ExtendedAmount>
+<Quantity>3</Quantity>
+</Sale>
+</LineItem>
+<LineItem>
+<SequenceNumber>2</SequenceNumber>
+<Tender TenderID=”CreditDebit” TypeCode=”Sale”>
+<Amount>9.89</Amount>
+<Authorization>
+<AuthorizedTermID>asdf</AuthorizedTermID>
+<RequestedAmount>9.89</RequestedAmount>
+<AuthorizationCode>234</AuthorizationCode>
+<ReferenceNumber>1234</ReferenceNumber>
+<ProviderID>asdf</ProviderID>
+<AuthorizationDateTime>2001-08-13T09:02:50</AuthorizationDateTime>
+</Authorization>
+<CreditDebit CardType=”Debit”>
+<IssuerIdentificationNumber>123456789</IssuerIdentificationNumber>
+<CardHolderName>Joe Cool</CardHolderName>
+<PrimaryAccountNumber>12345678</PrimaryAccountNumber>
+<ExpirationDate>2005-08</ExpirationDate>
+</CreditDebit>
+</Tender>
+</LineItem>
+<LineItem>
+<SequenceNumber>2</SequenceNumber>
+<Tender TenderID=”Cash” TypeCode=”Sale” ChangeFlag=”true”>
+<Amount>5.00</Amount>
+</Tender>
+</LineItem>
+<Total TotalType="TransactionGrandAmount">
+<Amount>4.89</Amount>
+</Total>
+</RetailTransaction>
+</Transaction>
+</POSLog>

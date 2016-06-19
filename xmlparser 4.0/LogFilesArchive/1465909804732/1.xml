@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> <POSLog xmlns="http://www.nrf-arts.org/IXRetail/namespace/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.nrf-arts.org/IXRetail/namespace/ ../POSLogV6.0.0.xsd" MajorVersion="6" MinorVersion="0" FixVersion="0"> <Transaction> <BusinessUnit> <UnitID>HighStreet</UnitID> </BusinessUnit> <WorkstationID>POS5</WorkstationID> <SequenceNumber>4294967295</SequenceNumber> <POSLogDateTime TypeCode="Transaction">2001-08-13T09:01:00</POSLogDateTime> <OperatorID>John</OperatorID> <RetailTransaction TransactionStatus="Finished"> <LineItem> <!-- Hamburger --> <Sale> <POSIdentity POSIDType="SKU"> <POSItemID>Sony music</POSItemID> </POSIdentity> <ExtendedAmount>500.00</ExtendedAmount> </Sale> <SequenceNumber>1</SequenceNumber> </LineItem> <LineItem> <!-- French Fries --> <Sale> <POSIdentity POSIDType="SKU"> <POSItemID>Samsung Ultra HD TV</POSItemID> </POSIdentity> <ExtendedAmount>2000.00</ExtendedAmount> </Sale> <SequenceNumber>2</SequenceNumber> </LineItem> <LineItem> <!-- Drink --> <Sale> <POSIdentity POSIDType="SKU"> <POSItemID>Ute</POSItemID> </POSIdentity> <ExtendedAmount>20000.00</ExtendedAmount> </Sale> <SequenceNumber>3</SequenceNumber> </LineItem>
+<LineItem> <!-- Drink --> <Sale> <POSIdentity POSIDType="SKU"> <POSItemID>Tv Unit</POSItemID> </POSIdentity> <ExtendedAmount>300.00</ExtendedAmount> </Sale> <SequenceNumber>3</SequenceNumber> </LineItem>
+<LineItem> <!-- Drink --> <Sale> <POSIdentity POSIDType="SKU"> <POSItemID>King bed</POSItemID> </POSIdentity> <ExtendedAmount>2223.00</ExtendedAmount> </Sale> <SequenceNumber>3</SequenceNumber> </LineItem>
+<LineItem> <!-- Drink --> <Sale> <POSIdentity POSIDType="SKU"> <POSItemID>Matress</POSItemID> </POSIdentity> <ExtendedAmount>903.00</ExtendedAmount> </Sale> <SequenceNumber>3</SequenceNumber> </LineItem>
+<LineItem> <!-- Drink --> <Sale> <POSIdentity POSIDType="SKU"> <POSItemID>ITv</POSItemID> </POSIdentity> <ExtendedAmount>1000.00</ExtendedAmount> </Sale> <SequenceNumber>3</SequenceNumber> </LineItem>
+<LineItem> <!-- Drink --> <Sale> <POSIdentity POSIDType="SKU"> <POSItemID>Dell pad</POSItemID> </POSIdentity> <ExtendedAmount>2003.00</ExtendedAmount> </Sale> <SequenceNumber>3</SequenceNumber> </LineItem>
+<LineItem> <!-- Drink --> <Sale> <POSIdentity POSIDType="SKU"> <POSItemID>Dining Table</POSItemID> </POSIdentity> <ExtendedAmount>453.00</ExtendedAmount> </Sale> <SequenceNumber>3</SequenceNumber> </LineItem>
+<LineItem> <!-- Drink --> <Sale> <POSIdentity POSIDType="SKU"> <POSItemID>Dish washer</POSItemID> </POSIdentity> <ExtendedAmount>3400.00</ExtendedAmount> </Sale> <SequenceNumber>3</SequenceNumber> </LineItem>
+<LineItem> <!-- Drink --> <Sale> <POSIdentity POSIDType="SKU"> <POSItemID>Washing machine</POSItemID> </POSIdentity> <ExtendedAmount>3333.00</ExtendedAmount> </Sale> <SequenceNumber>3</SequenceNumber> </LineItem>
+ <LineItem> <Tax>
+<Amount>.45</Amount>
+<Percent>7</Percent>
+</Tax>
+<SequenceNumber>4</SequenceNumber>
+</LineItem>
+<Total>9.45</Total>
+</RetailTransaction>
+</Transaction>
+</POSLog>

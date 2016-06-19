@@ -1,0 +1,16 @@
+{ Root: 
+   { type: [Function: Object],
+     properties: 
+      { BusinessUnit: [Object],
+        WorkstationID: [Object],
+        SequenceNumber: [Object],
+        POSLogDateTime: [Object],
+        OperatorID: [Object],
+        RetailTransaction: [Object] },
+     required: 
+      [ 'BusinessUnit',
+        'WorkstationID',
+        'SequenceNumber',
+        'POSLogDateTime',
+        'OperatorID',
+        'RetailTransaction' ] } }
